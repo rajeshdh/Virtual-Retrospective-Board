@@ -1,0 +1,14 @@
+{
+  "name": "retrospective",
+  "version": "1.0.0",
+  "description": "a real time retrospective board with video chat",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajesh Dhiman @paharihacker",
+  "license": "ISC",
+  "dependencies": {
+    "deepstream.io": "^0.8.1"
+  }
+}

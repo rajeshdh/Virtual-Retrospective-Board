@@ -1,0 +1,119 @@
+/**
+ * StickyNote
+ */
+
+.stickynote-header {
+    position: absolute;
+    width: 100%
+}
+.stickynote-copy {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 125px;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.stickynote-inner:after {
+    content: "";
+    height: 55%;
+    position: absolute;
+    width: 50%;
+    z-index: -2;
+    transform: skew(-8deg) rotate(-6deg);
+    bottom: 16px;
+    left: 10px;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.stickynote-inner {
+    line-height: 60px;
+    height: 80px;
+    width: 90px;
+}
+
+/**
+ * Large StickyNote
+ */
+.large-stickynote{
+    position: absolute !important;
+}
+.large-stickynote .stickynote-header {
+    height: 30px;
+}
+.large-stickynote .stickynote-inner {
+    min-height: 200px;
+    min-width: 200px;
+    padding: 45px 20px 10px;
+    border-radius: 0 0 0 200px/0 0 0 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.large-stickynote .stickynote-copy {
+    font-size: 25px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+/**
+ * Small StickyNote
+ */
+.small-stickynote {
+    display: inline-block;
+    transform: rotate(3deg);
+}
+.small-stickynote .stickynote-inner {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 12px 10px 5px;
+    border-radius: 0 0 0 200px/0 0 0 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/**
+ * Colors
+ */
+[data-type="sad"] .stickynote-inner {
+    background-image: -webkit-linear-gradient(top, #b0e1ec 15%, #baebf6 20%, #baebf6 33%);
+}
+[data-type="happy"] .stickynote-inner {
+    background-image: -webkit-linear-gradient(top, #f5e38c 15%, #ffed96 20%, #ffed96 33%);
+}
+[data-type="mad"] .stickynote-inner {
+    background-image: -webkit-linear-gradient(top, #e6a7a8 15%, #f0b1b2 20%, #f0b1b2 33%);
+}
+
+/**
+ * Devices
+ */
+@media (min-width: 801px) {
+    .stickynote {
+        margin: 20px;
+    }
+    .stickynote-header {
+        cursor: grab;
+        cursor: -webkit-grab;
+    }
+    .large-stickynote {
+        width: 200px;
+    }
+    .small-stickynote {
+        margin: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .large-stickynote {
+        display: block;
+        margin: 20px auto;
+        width: 75%;
+    }
+    .large-stickynote .stickynote-inner {
+        width: 100%;
+    }
+    .large-stickynote .stickynote-inner:after {
+        bottom: 30px;
+    }
+    .small-stickynote {
+        max-width: 29%;
+        margin: -20px 5px 10px 5px;
+        cursor: pointer;
+    }
+}

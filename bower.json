@@ -1,0 +1,23 @@
+{
+  "name": "retrospective",
+  "description": "a real time retrospective board with video chat",
+  "main": "start.js",
+  "authors": [
+    "Rajesh Dhiman @paharihacker"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "deepstream.io-client-js": "^0.4.3"
+  }
+}
