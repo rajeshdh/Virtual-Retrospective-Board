@@ -1,9 +1,9 @@
 #A Real Time Retrospective Board With Video chat
 
 
-## “retrospectives” — meetings where people write what made them “glad,” “mad” or “sad” onto different-colored notes, post them onto a board, arrange them in groups and — most importantly — talk about them.
+### “retrospectives” — meetings where people write what made them “glad,” “mad” or “sad” onto different-colored notes, post them onto a board, arrange them in groups and — most importantly — talk about them.
 
-Our “virtual retrospective board” needs to allow team members to:
+###virtual retrospective board needs to allow team members to:
 
     create, edit and move sticky notes;
     sync the current state of the board in real time between all team members;
@@ -16,7 +16,9 @@ It also needs to:
 To achieve this, we’ll be using:
 
     a bit of jQuery (chances are you’ll pick your M*C framework of choice, but let’s keep things simple);
-    deepstream (an open-source Node.js server that comes with all sorts of real-time functionality, like pub-sub, remote procedure calls and, most importantly for our sticky-notes board, data sync and WebRTC for video communication).
+    deepstream (an open-source Node.js server that comes with all sorts of real-time functionality, 
+    like pub-sub, remote procedure calls and, most importantly for our sticky-notes board, 
+    data sync and WebRTC for video communication).
 
 ## Install and run server
 
