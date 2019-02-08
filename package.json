@@ -9,6 +9,6 @@
   "author": "Rajesh Dhiman @paharihacker",
   "license": "ISC",
   "dependencies": {
-    "deepstream.io": "^0.8.1"
+    "deepstream.io": "^3.1.2"
   }
 }
